@@ -24,10 +24,11 @@
   </header>
   <main>
     <section class="filters">
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="output.value=input.value">
         <fieldset>
           <legend>Стоимость:</legend>
-          <!-- форма -->
+          <input type="range" id="input" name="input" min="0" max="20000" step="500" value="15000">
+          <output name="output">15000</output>
         </fieldset>
         <fieldset class="filter__grid">
           <legend>Сетка:</legend>
@@ -74,10 +75,16 @@
         <button class="filet__button" type="submit" name="button">Показать</button>
       </form>
     </section>
-    <div>
-      <h2>Сортировка:</h2>
-      <!-- форма -->
-    </div>
+    <form class="sort" action="index.html" method="post">
+      <fieldset>
+        <legend>Сортировать:</legend>
+        <button type="button" name="button">По цене</button>
+        <button type="button" name="button">По типу</button>
+        <button type="button" name="button">По названию</button>
+        <button type="button" name="button">По убыванию</button>
+        <button type="button" name="button">По возрастанию</button>
+      </fieldset>
+    </form>
     <section class="layout">
       <h2 hidden>Шаблоны макетов</h2>
       <ul class="layout__list">
