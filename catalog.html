@@ -2,8 +2,11 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -147,25 +150,6 @@
         </p>
         <button class="map__contacts__btn map__contacts__btn__red" type="button" name="button">Напишите нам</button>
       </div>
-      <section class="write-us">
-        <h2 class="write-us__title">Напишите нам</h2>
-        <button class="button-close" type="button" name="button">Закрыть</button>
-        <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="write-us__item">
-            <label for="write-us-name">Ваше имя:</label>
-            <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p class="write-us__item">
-            <label for="write-us-email">Ваше e-mail:</label>
-            <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p class="write-us__item">
-            <label for="write-us-comment">Текст письма:</label>
-            <textarea id="write-us-comment" name="comment" rows="8" cols="20" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="write-us__button-send" type="submit" name="button">Отправить</button>
-        </form>
-      </section>
       <div class="map-marker">
         <img src="img/map-marker.png" width="231" height="190" alt="map-marker">
         <img src="img/map.jpg" width="1725" height="808" alt="карта">
@@ -181,6 +165,25 @@
       <p class="footer__small-text">Скидка 10% для друзей из социальных сетей.<p>
     </section>
   </footer>
+  <section class="write-us">
+    <h2 class="write-us__title">Напишите нам</h2>
+    <button class="button-close" type="button" name="button">Закрыть</button>
+    <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="write-us__item">
+        <label for="write-us-name">Ваше имя:</label>
+        <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="write-us__item">
+        <label for="write-us-email">Ваше e-mail:</label>
+        <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="write-us__item">
+        <label for="write-us-comment">Текст письма:</label>
+        <textarea id="write-us-comment" name="comment" rows="8" cols="20" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="write-us__button-send" type="submit" name="button">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
