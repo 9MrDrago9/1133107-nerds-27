@@ -155,7 +155,7 @@ a {
   list-style: none;
 }
 
-input:disabled+label {
+input:disabled + label {
   opacity: 0.3;
 }
 
@@ -220,50 +220,17 @@ input:disabled+label {
   border-radius: 3px;
 }
 
-.write-us__item input::placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item input:-ms-input-placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item input::-ms-input-placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item input::-webkit-input-placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item input:-moz-placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item input::-moz-placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item textarea::placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item textarea:-ms-input-placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item textarea::-ms-input-placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item textarea::-webkit-input-placeholder {
-  color: #a1a1a1;
-}
-
-.write-us__item textarea:-moz-placeholder {
-  color: #a1a1a1;
-}
-
+.write-us__item input::placeholder,
+.write-us__item input:-ms-input-placeholder,
+.write-us__item input::-ms-input-placeholder,
+.write-us__item input::-webkit-input-placeholder,
+.write-us__item input:-moz-placeholder,
+.write-us__item input::-moz-placeholder,
+.write-us__item textarea::placeholder,
+.write-us__item textarea:-ms-input-placeholder,
+.write-us__item textarea::-ms-input-placeholder,
+.write-us__item textarea::-webkit-input-placeholder,
+.write-us__item textarea:-moz-placeholder,
 .write-us__item textarea::-moz-placeholder {
   color: #a1a1a1;
 }
@@ -278,50 +245,17 @@ input:disabled+label {
   border: 2px solid #000000;
 }
 
-.write-us__item input:focus::placeholder {
-  color: #444444;
-}
-
-.write-us__item input:focus:-ms-input-placeholder {
-  color: #444444;
-}
-
-.write-us__item input:focus::-ms-input-placeholder {
-  color: #444444;
-}
-
-.write-us__item input:focus::-webkit-input-placeholder {
-  color: #444444;
-}
-
-.write-us__item input:focus:-moz-placeholder {
-  color: #444444;
-}
-
-.write-us__item input:focus::-moz-placeholder {
-  color: #444444;
-}
-
-.write-us__item textarea:focus::placeholder {
-  color: #444444;
-}
-
-.write-us__item textarea:focus:-ms-input-placeholder {
-  color: #444444;
-}
-
-.write-us__item textarea:focus::-ms-input-placeholder {
-  color: #444444;
-}
-
-.write-us__item textarea:focus::-webkit-input-placeholder {
-  color: #444444;
-}
-
-.write-us__item textarea:focus:-moz-placeholder {
-  color: #444444;
-}
-
+.write-us__item input:focus::placeholder,
+.write-us__item input:focus:-ms-input-placeholder,
+.write-us__item input:focus::-ms-input-placeholder,
+.write-us__item input:focus::-webkit-input-placeholder,
+.write-us__item input:focus:-moz-placeholder,
+.write-us__item input:focus::-moz-placeholder,
+.write-us__item textarea:focus::placeholder,
+.write-us__item textarea:focus:-ms-input-placeholder,
+.write-us__item textarea:focus::-ms-input-placeholder,
+.write-us__item textarea:focus::-webkit-input-placeholder,
+.write-us__item textarea:focus:-moz-placeholder,
 .write-us__item textarea:focus::-moz-placeholder {
   color: #444444;
 }
