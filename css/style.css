@@ -192,8 +192,8 @@ header {
 }
 
 .about-us {
-  border-top: 2px solid #a1a1a1;
-  border-bottom: 2px solid #a1a1a1;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .about-us__big-text {
@@ -249,7 +249,7 @@ header {
 
 .partners__list {
   list-style: none;
-  border-top: 2px solid #a1a1a1;
+  border-top: 2px solid #eeeeee;
 }
 
 .partners__item {
@@ -287,6 +287,85 @@ header {
 
 input:disabled + label {
   opacity: 0.3;
+}
+
+/* range filter */
+
+.filter-price__range {
+  width: 260px;
+}
+
+.price__range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 13px;
+  padding-top: 39px;
+  padding-right: 21px;
+  padding-left: 21px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+.price__range-controls .range-scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.price__range-controls .range-bar {
+  width: 70%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.price__range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price__range-controls .toggle-min {
+  left: 19px;
+}
+
+.price__range-controls .toggle-max {
+  left: 161px;
+}
+
+.filter-price__controls {
+  font-size: 0;
+}
+
+.filter-price__controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter-price__controls input {
+  width: 80px;
+  padding: 8px 2px;
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
 
 .filter__button {
@@ -393,7 +472,8 @@ input:disabled + label {
   list-style: none;
 }
 
-.pages__item {
+.pages__item a {
+  display: block;
   padding: 16px 22px;
   margin-right: 11px;
   font-size: 16px;
@@ -405,21 +485,17 @@ input:disabled + label {
   color: #000000;
 }
 
-.pages__item a {
-  color: #000000;
-}
-
-.pages__active-point {
+.pages__active-point a {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
 }
 
-.pages__item:hover,
-.pages__item:focus {
+.pages__item a:hover,
+.pages__item a:focus {
   background-color: #dfdfdf;
 }
 
-.pages__item:active {
+.pages__item a:active {
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
