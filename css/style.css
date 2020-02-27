@@ -164,6 +164,7 @@ a {
 .slider__slide img {
   margin: 0 32px 0 0;
 }
+
 .swith__list {
   display: none;
   list-style: none;
@@ -446,6 +447,7 @@ input:disabled + label {
 .filter-features__item:nth-child(4) {
   margin-top: 17px;
 }
+
 /* range filter */
 .filter-price {
   padding: 0;
