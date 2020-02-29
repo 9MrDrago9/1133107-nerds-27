@@ -673,6 +673,7 @@ input:disabled + label {
 .pages__list {
   display: flex;
   margin-top: 40px;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
 }
@@ -711,7 +712,24 @@ input:disabled + label {
 }
 
 /* footer */
+.map {
+  margin: 0 auto;
+  height: 419px;
+}
+
+.map__contacts {
+  width: 219px;
+  padding: 49px 49px 30px;
+
+  position: relative;
+  top: 132px;
+  left: 96px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
 .nerds-design-studio {
+  margin: 0 0 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -720,13 +738,15 @@ input:disabled + label {
 .map__contacts__address,
 .map__contacts__number {
   width: 201px;
+  margin: 16px 0 19px 0;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
 
 .map__contacts__btn {
-  padding: 14px 43px;
+  margin: 17px 0;
+  padding: 17px 44px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -748,10 +768,25 @@ input:disabled + label {
   background-color: #d7373b;
 }
 
+.map-marker {
+  position: relative;
+  top: -430px;
+}
+
+.map-marker img:first-child {
+  position: relative;
+  top: 286px;
+  left: 776px;
+}
+
+.map-marker img:last-child {
+  width: 100%;
+}
+
 .main__footer {
   display: flex;
   align-items: center;
-  margin-top: 64px;
+  margin-top: 128px;
   margin-bottom: 64px;
 }
 
