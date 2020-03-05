@@ -722,8 +722,14 @@ input:disabled + label {
 
 /* footer */
 .map {
-  margin: 0 auto;
+  margin: 80px auto 0;
   height: 419px;
+}
+
+.map iframe {
+  width: 100%;
+  height: inherit;
+  border: 0;
 }
 
 .map__contacts {
@@ -731,7 +737,7 @@ input:disabled + label {
   padding: 49px 49px 30px;
 
   position: relative;
-  top: 132px;
+  top: -378px;
   left: 96px;
   z-index: 1;
   background-color: #ffffff;
@@ -778,25 +784,23 @@ input:disabled + label {
   background-color: #d7373b;
 }
 
-.map-wrapper {
+/* .map-wrapper {
   position: relative;
-  top: 0;
-}
-
-.map__marker {
+  top: -430px;
+} */
+/* .map__marker {
   position: relative;
   top: 286px;
   left: 776px;
-}
-
-.map__img {
+} */
+/* .map__img {
   width: 100%;
-}
+} */
 
 .main__footer {
   display: flex;
   align-items: center;
-  margin-top: 128px;
+  margin-top: 48px;
   margin-bottom: 64px;
 }
 
