@@ -1,5 +1,5 @@
 body {
-  width: 100%;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', Arial, sans-serif;
@@ -70,7 +70,6 @@ a {
 
 .header-nav__list {
   display: flex;
-  margin-right: 245px;
   margin-top: 26px;
   list-style: none;
   padding: 0;
@@ -92,6 +91,7 @@ a {
 .header-cart {
   align-items: center;
   margin-top: 6px;
+  margin-left: auto;
 }
 
 .header-cart img {
@@ -114,6 +114,10 @@ a {
 
 .active-nav {
   border-bottom: 2px solid #fb565a;
+}
+
+.slider {
+  position: relative;
 }
 
 .slider__slide {
@@ -167,13 +171,10 @@ a {
 
 .switch__list {
   display: flex;
-  width: 0;
-  height: 0;
-  margin: 0;
   list-style: none;
-  position: relative;
-  top: -115px;
+  position: absolute;
   left: 500px;
+  bottom: 76px;
 }
 
 .switch__item:not(:last-child) {
@@ -196,7 +197,7 @@ a {
   list-style: none;
 }
 
-.order__item {
+.order__item:not(:last-child) {
   margin-right: 100px;
 }
 
@@ -280,6 +281,7 @@ a {
 
 .about-us__container {
   display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -323,7 +325,6 @@ a {
 }
 
 .about-us__container-static {
-  margin-left: 150px;
   margin-bottom: 72px;
 }
 
@@ -580,7 +581,6 @@ input:disabled + label {
 
 .sort__list {
   display: flex;
-  width: 360px;
   list-style: none;
   margin: 0;
 }
@@ -594,12 +594,12 @@ input:disabled + label {
 }
 
 .sort__item:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 26px;
 }
 
 .sort__item:nth-child(4) {
-  margin-right: 16px;
-  margin-left: 25px;
+  margin-right: 18px;
+  margin-left: 22px;
 }
 
 .sort__item a:focus,
@@ -722,8 +722,10 @@ input:disabled + label {
 
 /* footer */
 .map {
+  position: relative;
   margin: 80px auto 0;
   height: 419px;
+  background: #000000 url("/img/map.jpg") no-repeat;
 }
 
 .map iframe {
@@ -734,10 +736,10 @@ input:disabled + label {
 
 .map__contacts {
   width: 219px;
-  padding: 49px 49px 30px;
+  padding: 49px 49px 28px;
 
-  position: relative;
-  top: -378px;
+  position: absolute;
+  top: 52px;
   left: 96px;
   z-index: 1;
   background-color: #ffffff;
@@ -784,19 +786,6 @@ input:disabled + label {
   background-color: #d7373b;
 }
 
-/* .map-wrapper {
-  position: relative;
-  top: -430px;
-} */
-/* .map__marker {
-  position: relative;
-  top: 286px;
-  left: 776px;
-} */
-/* .map__img {
-  width: 100%;
-} */
-
 .main__footer {
   display: flex;
   align-items: center;
@@ -813,16 +802,6 @@ input:disabled + label {
   padding: 0;
   list-style: none;
 }
-
-/* .social__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 79px;
-  height: 79px;
-  border-radius: 50%;
-  background-color: #e1e1e1;
-} */
 
 .social__item a {
   display: flex;
