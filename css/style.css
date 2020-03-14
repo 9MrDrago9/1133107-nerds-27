@@ -171,14 +171,36 @@ a {
 
 .switch__list {
   display: flex;
+  justify-content: center;
   list-style: none;
   position: absolute;
-  left: 500px;
-  bottom: 76px;
+  left: 0;
+  right: 0;
+  bottom: 99px;
 }
 
 .switch__item:not(:last-child) {
-  margin-right: 22px;
+  margin-right: 35px;
+}
+
+.switch__input {
+  position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.switch-radio__btn {
+  position: absolute;
+  margin-left: -29px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.switch__input:checked + .switch-radio__btn {
+  background-image: url(../img/active-button.svg);
 }
 
 .header-text {
@@ -315,9 +337,20 @@ a {
 }
 
 .about-us__order-item {
+  position: relative;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
+}
+
+.about-us__order-item:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -35px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .about-us__order-item:not(:last-child) {
@@ -325,7 +358,7 @@ a {
 }
 
 .about-us__container-static {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .about-us__container-static img {
@@ -429,32 +462,88 @@ a {
   list-style: none;
 }
 
-input:disabled + label {
-  opacity: 0.3;
-}
-
 .filter-grid {
   margin-top: 54px;
   padding: 0;
 }
 
-.filter-grid__item {
-  margin-top: 15px;
-  margin-left: 18px;
+.option {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.filter-grid__label {
+  padding-left: 35px;
+}
+
+.filter-grid__input {
+  position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.filter-grid__radio__btn {
+  position: absolute;
+  margin-top: -3px;
+	margin-left: -35px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon-radio-off.svg");
+  opacity: 0.4;
+}
+
+.filter-grid__input:hover + .filter-grid__radio__btn,
+.filter-grid__input:focus + .filter-grid__radio__btn {
+  opacity: 1;
+}
+
+.filter-grid__input:checked + .filter-grid__radio__btn {
+  background-image: url("../img/icon-radio-on.svg");
+}
+
+.filter-grid__input:disabled + .filter-grid__radio__btn {
+  opacity: 0.1;
 }
 
 .filter-features {
-  margin-top: 44px;
+  margin-top: 25px;
   padding: 0;
 }
 
-.filter-features__item {
-  margin-top: 15px;
-  margin-left: 17px;
+.filter-features__label {
+  padding-left: 35px;
 }
 
-.filter-features__item:nth-child(4) {
-  margin-top: 17px;
+.filter-features__input {
+  position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.filter-features__checkbox__btn {
+  position: absolute;
+  margin-top: -3px;
+	margin-left: -35px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-checkbox-off.svg");
+  opacity: 0.4;
+}
+
+.filter-features__input:hover + .filter-features__checkbox__btn,
+.filter-features__input:focus + .filter-features__checkbox__btn {
+  opacity: 1;
+}
+
+.filter-features__input:checked + .filter-features__checkbox__btn {
+  background-image: url("../img/icon-checkbox-on.svg");
+}
+
+.filter-features__input:disabled + .filter-features__checkbox__btn {
+  opacity: 0.1;
 }
 
 /* range filter */
@@ -543,7 +632,7 @@ input:disabled + label {
 
 .filter__button {
   padding: 16px 88px;
-  margin-top: 48px;
+  margin-top: 30px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -724,13 +813,13 @@ input:disabled + label {
 .map {
   position: relative;
   margin: 80px auto 0;
-  height: 419px;
-  background: #000000 url("/img/map.jpg") no-repeat;
+  min-height: 416px;
+  /* background: #000000 url("../img/map.jpg") no-repeat center; */
 }
 
 .map iframe {
   width: 100%;
-  height: inherit;
+  height: 416px;
   border: 0;
 }
 
@@ -795,12 +884,14 @@ input:disabled + label {
 
 .social__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  width: 260px;
   margin-right: 139px;
   padding: 0;
   list-style: none;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 12px;
 }
 
 .social__item a {
@@ -846,6 +937,10 @@ input:disabled + label {
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 
   padding: 73px 100px 84px;
+}
+
+.modal-view {
+  display: block;
 }
 
 .write-us__top {
