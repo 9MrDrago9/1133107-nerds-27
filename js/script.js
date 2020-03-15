@@ -1,15 +1,15 @@
 var link = document.querySelector(".map__contacts__btn");
 
-var link = document.querySelector(".write-us");
+var popup = document.querySelector(".write-us");
 var close = popup.querySelector(".button-close");
 
 var form = popup.querySelector("form");
-var login = popup.querySelector("[name=name]");
+var name = popup.querySelector("[name=name]");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  name.focus();
+  // name.focus();
   });
 
 close.addEventListener("click", function (evt) {
