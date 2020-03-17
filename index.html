@@ -29,29 +29,35 @@
       </nav>
       <section class="slider">
         <h2 class="visually-hidden">Слайды</h2>
-        <section class="slider__slide">
+        <section class="slider__slide slider__slide__first">
           <div class="slider__info">
             <p class="slider__big-text">Долго, дорого, скрупулезно.</p>
-            <p class="slider__small-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <p class="slider__small-text">
+              <span>Математически выверенный дизайн </span>
+              <span>для вашего сайта или мобильного приложения.</span>
+            </p>
             <a class="slider__button" href="#">Узнать больше</a>
           </div>
-          <img class="slider__img" src="img/slide1.png" width="698" height="413" alt="slide1">
         </section>
-        <section class="slider__slide slider__hidden">
+        <section class="slider__slide slider__slide__second slider__hidden">
           <div class="slider__info">
-            <p class="slider__big-text">Любим математику как никто другой</p>
-            <p class="slider__small-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <p class="slider__big-text">Любим математику<br> как никто другой</p>
+            <p class="slider__small-text">
+              <span>Никакого креатива, только математические формулы</span>
+              <span>для расчета идеальных пропорций.</span>
+            </p>
             <a class="slider__button" href="#">Узнать больше</a>
           </div>
-          <img class="slider__img" src="img/slide2.png" width="663" height="430" alt="slide2">
         </section>
-        <section class="slider__slide slider__hidden">
+        <section class="slider__slide slider__slide__third slider__hidden">
           <div class="slider__info">
-            <p class="slider__big-text">Только ночь, только хардкор</p>
-            <p class="slider__small-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <p class="slider__big-text">Только ночь,<br> только хардкор</p>
+            <p class="slider__small-text">
+              <span>Работать днем, как все? Мы против этого.</span>
+              <span>Ближе к полуночи работа только начинается.</span>
+            </p>
             <a class="slider__button" href="#">Узнать больше</a>
           </div>
-          <img class="slider__img" src="img/slide3.png" width="759" height="411" alt="slide3">
         </section>
         <ul class="switch__list">
           <li class="switch__item">
@@ -135,11 +141,7 @@
           </div>
         </div>
         <ul class="partners__list">
-          <li class="partners__item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/htmlacademy-logo.png" alt="htmlacademy">
-            </a>
-          </li>
+          <li class="partners__item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" alt="htmlacademy"></a></li>
           <li class="partners__item"><a href="#"><img src="img/borodinski-logo.png" alt="borodinski"></a></li>
           <li class="partners__item"><a href="#"><img src="img/pink-logo.png" alt="pink"></a></li>
           <li class="partners__item"><a href="#"><img src="img/mishka-logo.png" alt="mishka"></a></li>
@@ -151,7 +153,8 @@
     <section class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.581938678386!2d30.321538000000004!3d59.939079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sus!4v1583421674796!5m2!1sru!2sus"
-        frameborder="0" allowfullscreen=""></iframe>
+        allowfullscreen="">
+      </iframe>
       <div class="map__contacts">
         <p class="nerds-design-studio">NЁRDS DESIGN STUDIO</p>
         <p class="map__contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -210,10 +213,6 @@
       <h2 class="write-us__title">Напишите нам</h2>
       <button class="button-close" type="button" name="button">
         <span class="visually-hidden">Закрыть</span>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-          <path fill="#FB565A"
-            d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z" />
-        </svg> -->
       </button>
     </div>
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
