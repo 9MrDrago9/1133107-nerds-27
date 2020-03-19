@@ -566,6 +566,8 @@ sup {
 }
 
 .filter-features__input:checked+.filter-features__checkbox__btn {
+  width: 27px;
+  height: 23px;
   background-image: url("../img/icon-checkbox-on.svg");
 }
 
