@@ -159,14 +159,11 @@ a {
 }
 
 .slider__small-text {
+  width: 410px;
   margin: 16px 0 38px;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-}
-
-.slider__small-text span {
-  display: block;
 }
 
 .slider__button {
