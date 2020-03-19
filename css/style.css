@@ -774,7 +774,7 @@ sup {
   opacity: 1;
 }
 
-.layout__item .layout__item__info {
+.layout__item:hover .layout__item__info {
   display: flex;
 }
 
