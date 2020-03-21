@@ -23,7 +23,6 @@
           <li class="header-nav__item"><a href="#">Контакты</a></li>
         </ul>
         <div class="header-cart">
-          <img src="img/cart-icon.svg" width="15" height="15" alt="корзинка">
           <a class="header-shopping-cart" href="#">Корзина</a>
         </div>
       </nav>
@@ -126,8 +125,8 @@
             <li class="sort__item sort__item__active-point"><a href="#">По цене</a></li>
             <li class="sort__item"><a href="#">По типу</a></li>
             <li class="sort__item"><a href="#">По названию</a></li>
-            <li class="sort__item sort__item__active-point"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию"></a></li>
-            <li class="sort__item"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию"></a></li>
+            <li class="sort__item sort__item__active-point"><a class="sort__item__down-dir" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+            <li class="sort__item"><a class="sort__item__up-dir" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
           </ul>
         </section>
         <section class="layout">
@@ -141,7 +140,7 @@
               </div>
               <div class="layout__item__info">
                 <a class="layout__item__title" href="#">Sedona</a>
-                <p class="layout__item__text">Информационный сайт<br> для туристов</p>
+                <p class="layout__item__text">Информационный сайт для туристов</p>
                 <button class="layout__button" type="button" name="button">9 900 руб.</button>
               </div>
             </li>
@@ -153,7 +152,7 @@
               </div>
               <div class="layout__item__info">
                 <a class="layout__item__title" href="#">Pink app</a>
-                <p class="layout__item__text">Продуктовый лендинг<br> приложения для IOS и Android</p>
+                <p class="layout__item__text layout__item__text__width">Продуктовый лендинг приложения для IOS и Android</p>
                 <button class="layout__button" type="button" name="button">9 900 руб.</button>
               </div>
             </li>
@@ -165,7 +164,7 @@
               </div>
               <div class="layout__item__info">
                 <a class="layout__item__title" href="#">Barbershop</a>
-                <p class="layout__item__text">Сайт салона красоты.<br> Для мужчин, да.</p>
+                <p class="layout__item__text">Сайт салона красоты. Для мужчин, да.</p>
                 <button class="layout__button" type="button" name="button">9 900 руб.</button>
               </div>
             </li>
@@ -177,7 +176,7 @@
               </div>
               <div class="layout__item__info">
                 <a class="layout__item__title" href="#">Mishka</a>
-                <p class="layout__item__text">Интернет магазин<br> вязанный игрушек</p>
+                <p class="layout__item__text">Интернет магазин вязанный игрушек</p>
                 <button class="layout__button" type="button" name="button">9 900 руб.</button>
               </div>
             </li>
@@ -189,7 +188,7 @@
               </div>
               <div class="layout__item__info">
                 <a class="layout__item__title" href="#">A Plus</a>
-                <p class="layout__item__text">Лендинг курсов повышения<br> квалификации</p>
+                <p class="layout__item__text layout__item__text__width">Лендинг курсов повышения квалификации</p>
                 <button class="layout__button" type="button" name="button">9 900 руб.</button>
               </div>
             </li>
@@ -201,7 +200,7 @@
               </div>
               <div class="layout__item__info">
                 <a class="layout__item__title" href="#">Кваст</a>
-                <p class="layout__item__text">Промо-сайт производителя<br> крафтового кваса</p>
+                <p class="layout__item__text  layout__item__text__width">Промо-сайт производителя крафтового кваса</p>
                 <button class="layout__button" type="button" name="button">9 900 руб.</button>
               </div>
             </li>
@@ -233,7 +232,7 @@
       <div class="main__footer">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#">
+            <a class="social__item-link" href="#">
               <span class="visually-hidden">Вконтакте</span>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
                 <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
@@ -250,7 +249,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="#">
+            <a class="social__item-link" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
                 <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
@@ -258,12 +257,12 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="#">
+            <a class="social__item-link" href="#">
               <span class="visually-hidden">Инстаграм</span>
               <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
-                  fill="#fff" />
+                  fill="#ffffff" />
               </svg>
             </a>
           </li>
@@ -285,15 +284,15 @@
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
       <p class="write-us__item">
         <label for="write-us-name">Ваше имя:</label>
-        <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+        <input id="write-us-name" type="text" name="yourName" placeholder="Имя Фамилия">
       </p>
       <p class="write-us__item">
         <label for="write-us-email">Ваше e-mail:</label>
-        <input id="write-us-email" type="email" name="email" placeholder="email@example.com" required>
+        <input id="write-us-email" type="email" name="yourEmail" placeholder="email@example.com">
       </p>
       <p class="write-us__item">
         <label for="write-us-comment">Текст письма:</label>
-        <textarea id="write-us-comment" name="comment" rows="8" cols="20" placeholder="В свободной форме" required></textarea>
+        <textarea id="write-us-comment" name="comment" rows="8" cols="20" placeholder="В свободной форме"></textarea>
       </p>
       <button class="write-us__button-send" type="submit" name="button">Отправить</button>
     </form>

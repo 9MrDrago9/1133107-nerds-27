@@ -6,7 +6,7 @@
   <title>Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/minimized-style.css">
 </head>
 
 <body>
@@ -23,27 +23,26 @@
           <li class="header-nav__item"><a href="#">Контакты</a></li>
         </ul>
         <div class="header-cart">
-          <img src="img/cart-icon.svg" width="15" height="15" alt="корзинка">
           <a class="header-shopping-cart" href="#">Корзина</a>
         </div>
       </nav>
       <section class="slider">
         <h2 class="visually-hidden">Слайды</h2>
-        <section class="slider__slide slider__slide__first">
+        <section class="slider__slide slider__slide__first-img">
           <div class="slider__info">
             <p class="slider__big-text">Долго, дорого,<br> скрупулезно.</p>
             <p class="slider__small-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="slider__button" href="#">Узнать больше</a>
           </div>
         </section>
-        <section class="slider__slide slider__slide__second slider__hidden">
+        <section class="slider__slide slider__slide__second-img slider__hidden">
           <div class="slider__info">
             <p class="slider__big-text">Любим математику как никто другой</p>
             <p class="slider__small-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="slider__button" href="#">Узнать больше</a>
           </div>
         </section>
-        <section class="slider__slide slider__slide__third slider__hidden">
+        <section class="slider__slide slider__slide__third-img slider__hidden">
           <div class="slider__info">
             <p class="slider__big-text">Только ночь,<br> только хардкор</p>
             <p class="slider__small-text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
@@ -173,9 +172,9 @@
       <div class="main__footer">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#">
+            <a class="social__item-link" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
                 <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
           	c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
           	c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
@@ -190,20 +189,20 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="#">
+            <a class="social__item-link" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
                 <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="#">
+            <a class="social__item-link" href="#">
               <span class="visually-hidden">Инстаграм</span>
               <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
-                  fill="#fff" />
+                  fill="#ffffff" />
               </svg>
             </a>
           </li>
@@ -225,11 +224,11 @@
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
       <p class="write-us__item">
         <label for="write-us-name">Ваше имя:</label>
-        <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+        <input id="write-us-name" type="text" name="yourName" placeholder="Имя Фамилия">
       </p>
       <p class="write-us__item">
         <label for="write-us-email">Ваш e-mail:</label>
-        <input id="write-us-email" type="email" name="email" placeholder="email@example.com" required>
+        <input id="write-us-email" type="email" name="yourEmail" placeholder="email@example.com">
       </p>
       <p class="write-us__item">
         <label for="write-us-comment">Текст письма:</label>
@@ -238,7 +237,7 @@
       <button class="write-us__button-send" type="submit" name="button">Отправить</button>
     </form>
   </section>
-  <script src="js/script.js"></script>
+  <script src="js/minimized-script.js"></script>
 </body>
 
 </html>
